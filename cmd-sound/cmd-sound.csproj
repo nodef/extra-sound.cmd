@@ -7,8 +7,8 @@
     <ProjectGuid>{0527D8A6-0E8D-447F-B94A-07B78F9721BB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>cmd_sound</RootNamespace>
-    <AssemblyName>cmd-sound</AssemblyName>
+    <RootNamespace>orez.osound</RootNamespace>
+    <AssemblyName>osound</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

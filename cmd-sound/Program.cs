@@ -1,7 +1,19 @@
 ﻿using System;
+using System.Threading;
 
-namespace cmd_sound {
+namespace orez.osound {
 	class Program {
+
+		// constant data
+		/// <summary>
+		/// Minimum producable frequency.
+		/// </summary>
+		private const int FREQ_MIN = 37;
+		/// <summary>
+		/// Maximum producable frequency.
+		/// </summary>
+		private const int FREQ_MAX = 32767;
+
 
 		// static method
 		/// <summary>
@@ -11,8 +23,9 @@ namespace cmd_sound {
 		/// <param name="args">Input arguments.</param>
 		static void Main(string[] args) {
 			oParams p = new oParams(args);
-			if (p.Freq <= 0 || p.Time <= 0) return;
-			Console.Beep((int)p.Freq, (int)p.Time);
+			if (p.Time <= 0) return;
+			if (p.Freq < FREQ_MIN || p.Freq > FREQ_MAX) Thread.Sleep(p.Time);
+			else Console.Beep(p.Freq, p.Time);
 		}
 	}
 }
