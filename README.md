@@ -22,8 +22,3 @@ Produce sound of specific frequency in Windows Console.
 :: silence for 10s
 > osound 0 10000
 ```
-
-
-## license
-
-Do you have a Poké ball? That's enough!
