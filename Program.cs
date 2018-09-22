@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace orez.osound {
+namespace App {
 	class Program {
 
 		// constant data
@@ -22,7 +22,7 @@ namespace orez.osound {
 		/// </summary>
 		/// <param name="args">Input arguments.</param>
 		static void Main(string[] args) {
-			oParams p = new oParams(args);
+			Params p = new Params(args);
 			if (p.Time <= 0) return;
 			if (p.Freq < FREQ_MIN || p.Freq > FREQ_MAX) Thread.Sleep(p.Time);
 			else Console.Beep(p.Freq, p.Time);

@@ -1,12 +1,11 @@
-# osound
-
 Produce sound of specific frequency in Windows Console.
+> 1. Download [exe file](https://raw.githubusercontent.com/winp/extra-bel/master/ecd.cmd).
+> 2. Copy to `C:\Program_Files\Scripts`.
+> 3. Add `C:\Program_Files\Scripts` to `PATH` environment variable.
 
-
-## usage
 
 ```batch
-> osound <frequency> <time>
+> esound <frequency> <time>
 
 :: [] -> optional argument
 :: <> -> argument value
@@ -14,11 +13,11 @@ Produce sound of specific frequency in Windows Console.
 
 ```batch
 :: a 500Hz sound for 1s
-> osound 500 1000
+> esound 500 1000
 
 :: a 1kHz sound for 250ms
-> osound 1000 250
+> esound 1000 250
 
 :: silence for 10s
-> osound 0 10000
+> esound 0 10000
 ```
