@@ -24,3 +24,4 @@ Produce sound of specific frequency in Windows Console.
 
 
 [![cmdf](https://i.imgur.com/EYiYfwb.jpg)](https://cmdf.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-sound.cmd)
